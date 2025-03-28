@@ -4,7 +4,7 @@ exploit: exploit.c
 	${GCC_CMD} -o exploit exploit.c
 
 stack: stack.c
-	${GCC_CMD} -c -o stack stack.c
+	${GCC_CMD} -g -o stack stack.c
 	chmod 4755 stack
 
 call_shellcode: call_shellcode.c
