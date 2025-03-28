@@ -10,5 +10,8 @@ stack: stack.c
 call_shellcode: call_shellcode.c
 	${GCC_CMD} -o call_shellcode call_shellcode.c
 
+badfile: exploit
+	./exploit
+
 clean:
 	rm -f exploit stack call_shellcode
