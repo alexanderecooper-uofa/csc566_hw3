@@ -18,7 +18,9 @@ int bof(char *str)
     char buffer[BUF_SIZE];
 
     /* The following statement has a buffer overflow problem */
-    strcpy(buffer, str);       
+    strcpy(buffer, str);
+    
+    printf("buffer addr: %p\n", buffer);
 
     return 1;
 }
