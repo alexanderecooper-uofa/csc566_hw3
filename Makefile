@@ -1,4 +1,4 @@
-GCC_CMD=gcc -z execstack #-fno-stack-protector
+GCC_CMD=gcc -z execstack -fno-stack-protector
 
 exploit: exploit.c
 	${GCC_CMD} -o exploit exploit.c
