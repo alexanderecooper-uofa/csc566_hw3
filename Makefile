@@ -21,7 +21,7 @@ call_setuid: call_setuid.c
 	${GCC_CMD} -o call_setuid call_setuid.c
 
 call_setuid.asm: call_setuid.c
-	${GCC_CMD} -v -S -o call_setuid.asm call_setuid.c
+	${GCC_CMD} -S -o call_setuid.asm call_setuid.c
 
 badfile: exploit
 	./exploit
