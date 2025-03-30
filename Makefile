@@ -17,8 +17,11 @@ stack-dbg: stack.c
 call_shellcode: call_shellcode.c
 	${GCC_CMD} -o call_shellcode call_shellcode.c
 
+call_setuid: call_setuid.c
+	${GCC_CMD} -o call_setuid call_setuid.c
+
 badfile: exploit
 	./exploit
 
 clean:
-	rm -f exploit exploit-ec stack stack-dbg call_shellcode
+	rm -f exploit exploit-ec stack stack-dbg call_shellcode call_setuid
