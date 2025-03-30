@@ -21,10 +21,10 @@ call_setuid: call_setuid.c
 	${GCC_CMD} -o call_setuid call_setuid.c
 
 call_setuid.asm: call_setuid.c
-	${GCC_CMD} -static -S -o call_setuid.asm call_setuid.c
+	${GCC_CMD} -v -S -o call_setuid.asm call_setuid.c
 
 badfile: exploit
 	./exploit
 
 clean:
-	rm -f exploit exploit-ec stack stack-dbg call_shellcode call_setuid
+	rm -f exploit exploit-ec stack stack-dbg call_shellcode call_setuid call_setuid.asm
