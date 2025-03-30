@@ -20,6 +20,8 @@ int bof(char *str)
     /* The following statement has a buffer overflow problem */
     strcpy(buffer, str);
 
+    printf("buffer addr = %p\n", buffer);
+    
     return 1;
 }
 
